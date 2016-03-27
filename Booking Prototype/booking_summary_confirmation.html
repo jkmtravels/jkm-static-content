@@ -1,0 +1,446 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome to SureBus.in, Where Your Search Ends and Journey Begins</title>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap-3.0.0/bootstrap-3.0.0/dist/css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="bootstrap-3.0.0/bootstrap-3.0.0/dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="script/Angular/bootstrap-datepicker.css">
+<script src="script/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="script/Angular/angular.min.js" type="text/javascript"></script>
+
+<script src="bootstrap-3.0.0/bootstrap-3.0.0/dist/js/bootstrap.js" type="text/javascript"></script>
+<script src="script/Angular/angular-strap.js" type="text/javascript"></script>
+<script src="script/Angular/bootstrap-datepicker.js" type="text/javascript"></script>
+
+
+<script src="script/common.js" type="text/javascript"></script>
+
+<script src="script/bootstrap-slider.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="style/icomoon/style.css">
+<link rel="stylesheet" type="text/css" href="style/slider.css">
+<script>
+$(document).ready(function(e) {
+    $('.topnav li').on('mouseover',function(){
+		$(this).find('ul.submenu').show();
+	});
+	 $('.topnav li').on('mouseout',function(){
+		$(this).find('ul.submenu').hide();
+	});
+	$('#logo').on('click',function(){
+		navigate('index.html');
+	});
+	
+	$("#netbankingInfo").hide();
+	$("#debitcardInfo").hide();
+	$("#cashInfo").hide();
+	
+	
+	$('#iconCreditCard').on('click',function(){
+		$('#creditcardInfo').show();
+		$("#netbankingInfo").hide();
+		$('#debitcardInfo').hide();
+		$("#cashInfo").hide();
+	});
+	
+	$('#iconDebitCard').on('click',function(){
+		$('#debitcardInfo').show();
+		$("#netbankingInfo").hide();
+		$('#creditcardInfo').hide();
+		$("#cashInfo").hide();
+	}); 
+	
+	$('#iconNetBanking').on('click',function(){
+		$("#netbankingInfo").show();
+		$('#creditcardInfo').hide();
+		$('#debitcardInfo').hide();
+		$("#cashInfo").hide();
+	}); 
+	$('#iconCash').on('click',function(){
+		$("#cashInfo").show();
+		$("#netbankingInfo").hide();
+		$('#creditcardInfo').hide();
+		$('#debitcardInfo').hide();
+	}); 
+	
+	
+	$('.hasDatePicker').datepicker();
+	
+	$('.hasDatePicker').datepicker();
+	
+	$('#sl2').slider({
+		min:10,
+		max:5000,
+		step:100
+		
+		});
+});
+</script>
+</head>
+
+<body>
+<div class="mainwrapper">
+<div class="header">
+<div class="container">
+<div id="logo" class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="whiteicon icon-menu2"></span>
+</button>
+<div id="headerlinks" class="col-lg-10 col-md-9 col-sm-8 visible-lg visible-md">
+        <ul class="topnav">
+            <li>SERVICES</li>
+            <li>ABOUT US</li>
+            <li>CONTACT US
+                <ul class="submenu">
+                    <li>CALL: 800-SUREBUS</li>
+                    <li>EMAIL</li>
+                    <li>LIVE CHAT</li>
+               </ul>
+            </li>
+            <li>SIGN IN
+                <ul class="submenu">
+                    <li>SIGN IN</li>
+                    <li>NEW CUSTOMER?</li>
+                </ul>
+            </li>
+        </ul>
+</div>
+</div>
+<div id="mobileNav" class="navbar-collapse out collapse">
+
+          <ul class="nav navbar-nav visible-xs">
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">SIGN IN</a></li>
+                <li><a href="#">NEW CUSTOMER?</a></li>
+          </ul>
+</div>
+</div>
+<div class="row clearfix">
+  <div class="row visible-sm visible-md visible-lg" id="homebanner">
+      <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12" id="slidercontainer"></div>
+      
+</div>
+</div>
+
+
+<div class="row clearfix visible-lg visible-md pageTitleStrip">
+    <div class="container" >
+        <div class="col-lg-9 col-md-9 Economica PageHeader">Booking Summary</div>
+    </div>
+</div>
+
+<div class="row contentarea">
+    
+    <div class="container">
+    
+    <div class="col-lg-9 col-sm-9 col-md-9 col-xs-12" >
+    <div class="contentleft2" style="padding:0px;"><!-- Content starts -->
+    <div class="contentleftwrapper">
+    <div class="greentext col-lg-12">Thank you for booking with us</div>
+    <hr>
+    <div class="col-lg-6 cyanfont">Booking Reference #:XYZ3456</div>
+    <div class="col-lg-6">
+    <span class="pull-right"><span style="font-size:20px;" class="icon-print2"> </span>
+    <span style="font-size:20px;"  class="icon-email"></span>
+    </span>
+    </div>
+    <br class="clearfix">
+    </div>
+    
+    <div class="contentleftwrapper">
+    <div class="sectionhead">
+    Vehicle Information</div>
+    <table width="100%" border="0" cellpadding="5">
+      <tr>
+        <td width="20%" class="captions2">vehicle type:</td>
+        <td>Volvo Sleeper Bus</td>
+      </tr>
+      <tr>
+        <td class="captions2">Bus Needed:</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td class="captions2">amenities:</td>
+        <td>Air Conditioner, Water, Movie, Chargin Point, Live Tracking</td>
+      </tr>
+      <tr>
+        <td class="captions2">QUOTED AMOUNT/BUS:</td>
+        <td>4600.00</td>
+      </tr>
+    </table>
+    <br>
+    <div class="sectionhead">
+   Trip Information</div>
+    <table width="100%" border="0" cellpadding="5">
+      <tr>
+        <td colspan="2" class="cyanfont">Ahmedabad <span class="icon-arrow-right-outline"></span> New Delhi</td>
+        </tr>
+      <tr>
+        <td width="20%" class="captions2">LEAVING ON:</td>
+        <td>05/05/2015, 8:00 AM</td>
+      </tr>
+      <tr>
+        <td class="captions2">Departure Location:</td>
+        <td>34, Ashwamegh Bunglows, satellite , Ahmedabad, Gujarat</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="cyanfont">New Delhi <span class="icon-arrow-right-outline"></span> Ahmedabad</td>
+      </tr>
+      <tr>
+        <td class="captions2">LEAVING ON:</td>
+        <td>15/05/2015, 9:00 PM</td>
+      </tr>
+      <tr>
+        <td class="captions2">Departure Location:</td>
+        <td>123, XYZ apartments, near ashok road, New Delhi, Delhi</td>
+      </tr>
+    </table>
+    <br>
+    <table border="0" class="tableGrid" width="100%" cellpadding="2">
+      <thead>
+        <tr>
+          <th style="text-align:center" width="5%">#</th>
+          <th>Route City/Point</th>
+          <th width="10%"># of Night(s)</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center">1</td>
+          <td>Jaipur</td>
+          <td style="text-align:center">1</td>
+          </tr>
+        <tr class="evenrow">
+          <td style="text-align:center">2</td>
+          <td>Indore</td>
+          <td style="text-align:center">1</td>
+          </tr>
+        <tr>
+          <td style="text-align:center">3</td>
+          <td>Agra</td>
+          <td style="text-align:center">1</td>
+          </tr>
+        <tr class="evenrow">
+          <td style="text-align:center">4</td>
+          <td>Mathura</td>
+          <td style="text-align:center">1</td>
+          </tr>
+      </tbody>
+</table>
+    <br>
+   
+    <div class="sectionhead"> Contact Information</div>
+    <table width="100%" border="0" cellpadding="5">
+      <tr>
+        <td width="20%" class="captions2">Name:</td>
+        <td>Ramesh R. Patel</td>
+      </tr>
+      <tr>
+        <td class="captions2">business:</td>
+        <td>ABC corporation Limited</td>
+      </tr>
+      <tr>
+        <td class="captions2">Address:</td>
+        <td>34, Ashwamegh Bunglows, satellite , Ahmedabad, Gujarat</td>
+      </tr>
+      <tr>
+        <td class="captions2">Email Address:</td>
+        <td>rameshpatel@gmail.com</td>
+      </tr>
+      <tr>
+        <td class="captions2">Phone Number:</td>
+        <td>98250 98250</td>
+      </tr>
+    </table>
+     <br>
+<div class="sectionhead"> Payment Information </div>
+    <br>
+    <table width="100%" border="0" cellpadding="5">
+      <tr>
+        <td width="20%" class="captions2">Payment Method:</td>
+        <td>Credit Card</td>
+      </tr>
+      <tr>
+        <td class="captions2">Credit Card Type:</td>
+        <td><img src="images/icons/payment-creditcard-visa-icon.png" width="48" height="48" alt="Visa"></td>
+      </tr>
+      <tr>
+        <td class="captions2">Card Number:</td>
+        <td>******7676</td>
+      </tr>
+      <tr>
+        <td class="captions2">Paid Amount:</td>
+        <td class="greentext">13800.00</td>
+      </tr>
+    </table>
+    <br>
+    <span class="clearfix"></span>
+     <br >
+    <div class="buttonPanel">
+    <button type="button" class="greenbutton">Email</button>&nbsp;
+    <button type="button" class="greenbutton">Print</button> 
+    </div>
+    <span class="clearfix"></span>
+    </div>
+    
+    <!--Content ends-->
+        <!-- Content starts --><!--Content ends-->
+    
+     <!-- Content starts --><!--Content ends-->
+    
+    <div id="searchInfo"></div>
+    </div>
+    </div>
+    <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12" style="padding:0px;">
+    <div class="contentright2" style="padding:0px;">
+      <div class="contentrightwrapper">
+        <div id="sectionhead" class="sectionhead">
+    Trip Summary </div>
+    <div class="filtersection">
+   	<table width="100%">
+    <tr>
+    <td class="cyanfont">
+    Ahmedabad to Delhi
+    </td>
+    
+    </tr>
+    <tr>
+    <td>05/05/2015 &mdash; 15/05/2014</td>
+    </tr>
+   
+    <tr>
+    <td><hr></td>
+    </tr>
+     <tr>
+    <td>
+    <table width="100%" cellpadding="3" cellspacing="1">
+    <tr>
+    <td class="captions" width="60%"># Bus Category:</td>
+    <td width="40%" style="text-align:right">Volvo Delux</td>
+    </tr>
+    <tr>
+    <td class="captions"># of Bus Booked:</td>
+    <td style="text-align:right">3</td>
+    </tr>
+     <tr>
+    <td class="captions">Quoted Amount/Bus:</td>
+    <td style="text-align:right">4600.00</td>
+    </tr>
+     
+    </table>
+    </td>
+    </tr>
+     <tr>
+    <td><hr></td>
+    </tr>
+    <tr>
+    <td>
+    <table width="100%" cellpadding="3" cellspacing="1">
+    <tr>
+    <td class="captions" width="60%">Total Quoted:</td>
+    <td style="text-align:right" class="priceamnt">13800.00</td>
+    </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+   
+    </div>
+    
+  </div>
+
+<div class="contentrightwrapper">
+        <div id="sectionhead" class="sectionhead">
+    Need Help? </div>
+    <div class="filtersection">
+    We would be more than happy ro help you. Our team advisor are always ready at your service to help you.
+    <br/>
+    <br/>
+    
+    <span class="icon-phone">
+    </span>
+    <span class="cyanfont">800-SUREBUS</span>
+    <br/>
+    <span class="icon-email">
+    </span>
+    <span class="cyanfont">help@surebus.in</span>
+    </div>
+    
+  </div>
+      <!--right wrapper ends-->
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    
+    </div>
+    
+    
+</div>
+
+
+
+    <div class="footerwrapper">
+   
+        <div class="container">
+           
+           <div class="col-lg-2">
+          		<ul class="subFooterLinks">
+                    <li><span>SureBus</span></li>
+                    <li><a href=#"">Home</a></li>
+                    <li><a href=#"">Privacy</a></li>
+                    <li><a href=#"">Services</a></li>
+                    <li><a href=#"">Partners</a></li>
+                    <li><a href=#"">News</a></li>
+                </ul>
+           </div>
+           
+           <div class="col-lg-2">
+				<ul class="subFooterLinks">
+                    <li><span> About us</span></li>
+                    <li><a href=#"">Latest News</a></li>
+                    <li><a href=#"">Press Releases</a></li>
+                    <li><a href=#"">Terms & Conditions</a></li>
+                </ul>
+           </div>
+           
+           <div class="col-lg-2">
+           		<ul class="subFooterLinks">
+                    <li><span>Support</span></li>
+                    <li><a href=#"">Contact Us</a></li>
+                    <li><a href=#"">Find Your Order</a></li>
+                    <li><a href=#"">FAQs</a></li>
+                </ul>
+           </div>
+           
+           <div class="col-lg-6 col-xs-12 worldmap">
+           <p>
+           <span>Contact SureBus</span>
+            Support@surebus.in<br/>
+            Customer Care: 800-SureBus<br/>
+            Fax: 456-345-3343
+            </p>
+           </div>
+           
+      </div>
+        
+        <div class="footer">
+        <div class="container">
+            <div class="col-lg-3 col-md-3 col-xs-12">© Copyright SureBus.in 2014</div>
+                <div class="col-lg-9 col-md-9" id="footerLinks">
+                <a href="#">Customer Care</a> |  <a href="#">About Us</a>  |  <a href="#">Contact Us</a>  |   <a href="#">Privacy Policy</a>  |  <a href="#">Terms & Conditions</a>
+                </div>
+          </div>
+        </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
